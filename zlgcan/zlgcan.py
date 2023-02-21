@@ -254,7 +254,7 @@ class IProperty(Structure):
 class ZCAN(object):
     def __init__(self):
         if platform.system() == "Windows":
-            self.__dll = windll.LoadLibrary("./zcan/zlgcan.dll")
+            self.__dll = windll.LoadLibrary("./zlgcan/zlgcan.dll")
         else:
             print("No support now!")
         if self.__dll == None:
